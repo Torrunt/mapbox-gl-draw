@@ -1,8 +1,8 @@
 {
-  "name": "@mapbox/mapbox-gl-draw",
-  "version": "1.4.3-b",
+  "name": "@torrunt/mapbox-gl-draw",
+  "version": "1.4.3-c",
   "description": "A drawing component for Mapbox GL JS",
-  "homepage": "https://github.com/mapbox/mapbox-gl-draw",
+  "homepage": "https://github.com/torrunt/mapbox-gl-draw",
   "author": "mapbox",
   "license": "ISC",
   "main": "dist/mapbox-gl-draw.js",
@@ -27,7 +27,8 @@
     "start": "run-p build-token watch watch-bench start-server"
   },
   "files": [
-    "dist/mapbox-gl-draw*"
+    "dist/mapbox-gl-draw*",
+    "dist/index.d.ts"
   ],
   "repository": {
     "type": "git",
