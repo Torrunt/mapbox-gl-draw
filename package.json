@@ -1,6 +1,6 @@
 {
   "name": "@torrunt/mapbox-gl-draw",
-  "version": "1.4.3-c",
+  "version": "1.4.3-d",
   "description": "A drawing component for Mapbox GL JS",
   "homepage": "https://github.com/torrunt/mapbox-gl-draw",
   "author": "mapbox",
