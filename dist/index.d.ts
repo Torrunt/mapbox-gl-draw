@@ -194,11 +194,13 @@ declare namespace MapboxDraw {
 
         getFeature(id: string): DrawFeature;
 
-        select(id: string): void;
+        select(featureIds: string | string[]): void;
+        
+        deselect(featureIds: string | string[]): void;
 
         delete(id: string): void;
 
-        deleteFeature(id: string, opts?: any): void;
+        deleteFeature(featureIds: string | string[], opts?: any): void;
 
         addFeature(feature: DrawFeature): void;
 
@@ -436,8 +438,8 @@ declare namespace MapboxDraw {
         };
 
         featuresAt: {
-            click: (event: MapMouseEvent, bbox: BBox, ctx: DrawCustomModeThis) => Feature[]; // ?? ctx
-            touch: (event: MapTouchEvent, bbox: BBox, ctx: DrawCustomModeThis) => Feature[]; // ?? ctx
+            click: (event: MapMouseEvent | null, bbox: BBox | null, ctx: DrawCustomModeThis) => Feature[]; // ?? ctx
+            touch: (event: MapTouchEvent | null, bbox: BBox | null, ctx: DrawCustomModeThis) => Feature[]; // ?? ctx
         };
 
         getFeatureAtAndSetCursors(event: MapMouseEvent, ctx: DrawCustomModeThis): Feature;
